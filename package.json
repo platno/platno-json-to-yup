@@ -8,7 +8,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/rimraf ./dist && ./node_modules/.bin/babel ./src --out-dir ./dist --ignore \"src/**/*.test.js\"",
+    "build": "./node_modules/.bin/rimraf ./dist && ./node_modules/.bin/babel ./src --out-dir ./dist --ignore \"src/**/*.test.js\" --env-name prod",
     "lint": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "publish": "npm run build && npm publish",
     "test": "./node_modules/.bin/jest"
