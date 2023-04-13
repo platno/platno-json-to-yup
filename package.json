@@ -1,6 +1,6 @@
 {
   "name": "platno-json-to-yup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Build a Yup schema object from JSON configuration.",
   "source": "src/index.js",
   "main": "dist/index.js",
@@ -10,7 +10,6 @@
   "scripts": {
     "build": "./node_modules/.bin/rimraf ./dist && ./node_modules/.bin/babel ./src --out-dir ./dist --ignore \"src/**/*.test.js\" --env-name prod",
     "lint": "./node_modules/.bin/eslint \"src/**/*.js\"",
-    "publish": "npm run build && npm publish",
     "test": "./node_modules/.bin/jest"
   },
   "author": "Petar Vudragovic <github@platno.rs>",
